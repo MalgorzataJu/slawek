@@ -70,7 +70,7 @@ nav.naw {
   /* display: flex; */
 }
 
-ul {
+nav ul {
   display: flex;
   background-color: #171f3b;
   position: fixed;
@@ -83,11 +83,11 @@ ul {
   /* flex-direction: column; */
 }
 
-li {
+nav li {
   list-style: none;
 }
 
-a {
+nav a {
   position: relative;
   line-height: 100%;
   background-color: #171f3b;
@@ -95,7 +95,7 @@ a {
   color: #bbb;
   display: block;
   text-decoration: none;
-  font-size: 18px;
+  /* font-size: 18px; */
   text-transform: uppercase;
   line-height: 10vh;
   letter-spacing: 1px;
@@ -190,8 +190,7 @@ header button {
   border: 2px solid white;
 }
 
-
-@media (orientation: portrait) and (min-width: 360px) {
+@media (max-width :730px) {
   .burger {
     display: block;
   }
@@ -204,8 +203,7 @@ header button {
 
   nav ul li a {
     padding: 0 10px 0;
-    /* font-size: 15px; */
-    /* line-height: 10vh; */
+    font-size: 12px;
   }
 
   nav.show ul {
@@ -216,77 +214,22 @@ header button {
     align-items: flex-start;
   }
 
-  header h1 {
-    font-size: 24px;
-  }
-
-  header h2 {
-    font-size: 24px;
-  }
-
-  header button {
-    margin-top: 24px;
-    line-height: 40px;
-    font-size: 16px;
-  }
-
   header img {
-    /* right: 20%; */
+    right: 20%;
     height: 50%;
   }
 
+  header {
+    background-position: 50%;
+  }
+
 }
-
-@media (orientation: portrait) and (min-width: 410px) {
-  header h1 {
-    font-size: 26px;
-  }
-
-  header h2 {
-    font-size: 26px;
-  }
-
-  header button {
-    margin-top: 40px;
-    line-height: 50px;
-    font-size: 20px;
-  }
-
-  header img {
-    right: -20%;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 768px) {
-  header p {
-    font-size: 80px;
-  }
-
-  header h1 {
-    font-size: 32px;
-  }
-
-  header h2 {
-    font-size: 32px;
-  }
-
-  header button {
-    margin-top: 60px;
-    line-height: 60px;
-    font-size: 24px;
-  }
-
-  header img {
-    /* right: -20%; */
-  }
-}
-
 
 @media (orientation: landscape) {
   header img {
-    height: 80%;
+    height: 70%;
     bottom: 0;
-    /* right: -5%; */
+    right: -5%;
   }
 
   header div.welcome {
@@ -900,6 +843,10 @@ header button {
   padding: 30px 20px;
 }
 
+.contact a {
+  color: white;
+}
+
 .contact h1 {
   font-family: 'Saira Condensed',
     sans-serif;
@@ -949,6 +896,7 @@ header button {
   font-size: 0;
 }
 
+
 .contact .social {
 
   padding: 10px 0;
@@ -961,6 +909,7 @@ header button {
   float: left;
 
 }
+
 
 .contact .social span {
   line-height: 72px;
