@@ -1,0 +1,24 @@
+<div class="wrap">
+  <div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="naw">
+    <ul>
+      <li><a href="">o mnie<span class="line"></span></a></li>
+      <li><a href="">Portfolio<span  class="line"></span></a></li>
+      <li><a href="">Kontakt<span  class="line"></span></a></li>
+      <li><a href="">Technologie<span  class="line"></span></a></li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  const ico = document.querySelector(".burger ");
+  const nav = document.querySelector(".naw");
+  ico.addEventListener("click", function () {
+    ico.classList.toggle("active");
+    nav.classList.toggle("show");
+  })
+</script>
