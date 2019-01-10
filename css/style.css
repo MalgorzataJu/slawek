@@ -11,11 +11,40 @@ sans-serif;
   box-sizing: border-box;
 }
 
+
+div.language_box {
+  position: fixed;
+  z-index: 4;
+  color: white;
+  right: 2rem;
+  top: .2rem;
+
+}
+
+
+.wrap button {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  border: 0;
+  outline: none;
+
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 5px 5px;
+}
+
+
+.wrap .active {
+  border: 2px solid rgba(161, 147, 245, 0.2);
+}
+
 .burger {
   position: fixed;
-  top: 20px;
+  top: 3rem;
   right: 20px;
-  width: 40px;
+  width: 45px;
   height: 40px;
   transition: .2s linear;
   z-index: 3;
@@ -29,7 +58,7 @@ sans-serif;
 .burger span {
   position: absolute;
   width: 100%;
-  height: 10px;
+  height: 8px;
   background-color: #fff;
   left: 0;
   transition: top .2s .2s, bottom .2s .2s, opasity .2s .2s, transform .2s .4s;
@@ -46,7 +75,7 @@ sans-serif;
 }
 
 .burger span:nth-child(2) {
-  top: calc(50% - 5px);
+  top: calc(50% - 4px);
 }
 
 .burger.active span:nth-child(2) {
@@ -67,7 +96,6 @@ sans-serif;
 
 nav.naw {
   top: 0;
-  /* display: flex; */
 }
 
 nav ul {
@@ -78,9 +106,8 @@ nav ul {
   left: 0;
   right: 0;
   z-index: 2;
-  align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
+
 }
 
 nav li {
@@ -89,18 +116,17 @@ nav li {
 
 nav a {
   position: relative;
-  line-height: 100%;
   background-color: #171f3b;
-  padding: 0 40px;
+  padding: 20px 40px;
+  /* width: 100%; */
   color: #bbb;
   display: block;
   text-decoration: none;
-  /* font-size: 18px; */
+  text-align: center;
+  font-size: 18px;
   text-transform: uppercase;
-  line-height: 10vh;
   letter-spacing: 1px;
   font-family: roboto, sans-serif;
-  list-style-type: none;
   transition: 0.7s;
   cursor: pointer;
   overflow: hidden;
@@ -197,21 +223,24 @@ header button {
 
   nav ul {
     top: -200px;
-    width: 50%;
-    font-size: 20px;
   }
 
   nav ul li a {
-    padding: 0 10px 0;
-    font-size: 12px;
+    padding: 10px 10px 0;
+    font-size: 14px;
+    /* background-color: #fff; */
+
   }
 
   nav.show ul {
     flex-direction: column;
     top: 0;
-    left: 0;
     z-index: 2;
+    padding: 15px 15px;
     align-items: flex-start;
+    justify-content: flex-start;
+    width: 35vw;
+
   }
 
   header img {
@@ -227,7 +256,7 @@ header button {
 
 @media (orientation: landscape) {
   header img {
-    height: 70%;
+
     bottom: 0;
     right: -5%;
   }
@@ -245,8 +274,13 @@ header button {
 }
 
 @media (orientation: landscape) and (min-width: 640px) {
+
   header h1 {
     font-size: 24px;
+  }
+
+  header img {
+    height: 70%;
   }
 
   header h2 {
