@@ -5,7 +5,8 @@
 /tmp
 /out-tsc
 
-#environments
+#angular folders to ignore
+/.firebase
 /src/environments
 
 # dependencies
